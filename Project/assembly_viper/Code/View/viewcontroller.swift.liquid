@@ -1,0 +1,26 @@
+{% include 'header' %}
+
+import UIKit
+
+final class {{ module_info.name }}ViewController: UIViewController, Viewable, Origin {
+    typealias State = {{ module_info.name }}ViewState
+    typealias Output = {{ module_info.name }}ViewOutput
+    var output: Output!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        output.readyForInitState()
+    }
+
+    func applyState(_ state: State) {
+        switch state{
+        	default: return
+        }
+    }
+}
+
+extension {{ module_info.name }}ViewController: Constructable {}
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewInput {}
+
+extension {{ module_info.name }}ViewController: Storyboardable {}

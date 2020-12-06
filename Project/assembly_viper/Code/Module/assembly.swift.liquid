@@ -1,0 +1,21 @@
+{% include 'header' %}
+
+import Swinject
+
+final class {{ module_info.name }}Assembly: Assembly {
+    func assemble(container: Container) {
+        container.register({{ module_info.name }}Module.self) { (resolver) -> {{ module_info.name }}Module in
+            let interactor = {{ module_info.name }}Interactor()
+            let router = {{ module_info.name }}Router()
+            let presenter = {{ module_info.name }}Presenter(routerInput: router, interactorInput: interactor)
+            let viewController = {{ module_info.name }}ViewController.construct(output: presenter)
+            interactor.output = presenter
+            presenter.viewInput = viewController
+            router.origin = viewController
+            router.output = presenter
+            let module = {{ module_info.name }}Module(view: viewController, inputListener: presenter)
+            return module
+        }
+
+    }
+}

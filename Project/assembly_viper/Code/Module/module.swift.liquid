@@ -1,0 +1,15 @@
+{% include 'header' %}
+
+import Foundation
+
+final class {{ module_info.name }}Module : Modulable {
+    typealias InputListener = {{ module_info.name }}ModuleInput
+	let view: Origin
+	var transition: Transition?
+	var inputListener: InputListener
+
+	init(view: Origin, inputListener: InputListener){
+    	self.view = view
+	    self.inputListener = inputListener
+	}
+}

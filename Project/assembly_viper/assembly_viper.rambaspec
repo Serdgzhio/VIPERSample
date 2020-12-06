@@ -1,0 +1,37 @@
+# Template information section
+name: assembly_viper
+summary: VIPER module with assembly and protocols
+author: Azarenkov Sergey
+version: 1.0.0
+license: CHISW
+
+
+{% if custom_parameters.createBaseStruct == true %}
+{% else %}
+{% endif %}
+
+# The declarations for code files
+code_files:
+# View layer
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+- {name: View/ViewState.swift, path: Code/View/viewstate.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Router layer
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Module
+- {name: Module/Assembly.swift, path: Code/Module/assembly.swift.liquid}
+- {name: Module/Module.swift, path: Code/Module/module.swift.liquid}
+
+# Interfaces
+- {name: Interfaces/Interfaces.swift,  path: Code/Interfaces/interfaces.swift.liquid}
+
+# Template dependencies
+dependencies:
+- Swinject

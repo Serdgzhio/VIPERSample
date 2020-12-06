@@ -1,0 +1,6 @@
+{% include 'header' %}
+
+final class {{ module_info.name }}Router: Routable, {{ module_info.name }}RouterInput{
+ 	weak var output: {{ module_info.name }}RouterOutput?
+    weak var origin: Origin?
+}

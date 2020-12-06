@@ -1,0 +1,35 @@
+{% include 'header' %}
+
+final class {{ module_info.name }}Presenter: RouterInputable, ViewInputable, InteractorInputable {
+    typealias ViewInput = {{ module_info.name }}ViewInput
+    typealias InteractorInput = {{ module_info.name }}InteractorInput
+    typealias RouterInput = {{ module_info.name }}RouterInput
+    var routerInput: RouterInput
+    var interactorInput: InteractorInput
+    unowned var viewInput: ViewInput!
+    
+    init(routerInput: RouterInput, interactorInput: InteractorInput) {
+        self.routerInput = routerInput
+        self.interactorInput = interactorInput
+    }
+}
+
+extension {{ module_info.name }}Presenter: Preparable {
+    func readyForInitState() {
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+    
+}
+
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+    
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}RouterOutput {
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+}

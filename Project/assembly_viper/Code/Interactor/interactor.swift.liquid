@@ -1,0 +1,6 @@
+{% include 'header' %}
+
+final class {{ module_info.name }}Interactor:  {{ module_info.name }}InteractorInput, Interactable {
+    typealias Output = {{ module_info.name }}InteractorOutput
+    weak var output: Output!
+ }

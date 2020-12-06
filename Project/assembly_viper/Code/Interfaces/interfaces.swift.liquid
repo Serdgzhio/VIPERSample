@@ -1,0 +1,25 @@
+{% include 'header' %}
+
+import Foundation
+
+protocol {{ module_info.name }}ModuleInput {
+}
+
+protocol {{ module_info.name }}RouterInput {
+}
+
+protocol {{ module_info.name }}RouterOutput: AnyObject {
+}
+
+protocol {{ module_info.name }}InteractorOutput: AnyObject {
+}
+
+protocol {{ module_info.name }}InteractorInput {
+}
+
+protocol {{ module_info.name }}ViewInput: AnyObject {
+    func applyState(_ state: {{ module_info.name }}ViewState)
+}
+
+protocol {{ module_info.name }}ViewOutput: Preparable {
+}

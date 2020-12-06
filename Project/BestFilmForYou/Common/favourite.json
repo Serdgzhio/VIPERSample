@@ -1,0 +1,53 @@
+{
+  "page": 0,
+  "results": [
+    {
+      "genre_ids": [
+        28
+      ],
+      "id": 1,
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "release_date": "2008-07-18",
+      "poster_path": null,
+      "title": "The Dark Knight0",
+      "rating": 9
+    },
+    {
+      "genre_ids": [
+        28
+      ],
+      "id": 2,
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "release_date": "2008-07-18",
+      "poster_path": null,
+      "title": "The Dark Knight1",
+      "rating": 9
+    },
+    {
+      "genre_ids": [
+        28
+      ],
+      "id": 3,
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "release_date": "2008-07-18",
+      "poster_path": null,
+      "title": "The Dark Knight2",
+      "rating": 9
+    },
+    {
+      "genre_ids": [
+        28
+      ],
+      "id": 4,
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "release_date": "2008-07-18",
+      "poster_path": null,
+      "title": "The Dark Knight3",
+      "rating": 9
+    },
+    
+  ],
+  "total_pages": 3,
+  "total_results": 605
+}
+
